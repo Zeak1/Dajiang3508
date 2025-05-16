@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"dajiang3508\startup_stm32f427xx.o"
+"dajiang3508\main.o"
+"dajiang3508\gpio.o"
+"dajiang3508\can.o"
+"dajiang3508\stm32f4xx_it.o"
+"dajiang3508\stm32f4xx_hal_msp.o"
+"dajiang3508\stm32f4xx_hal_can.o"
+"dajiang3508\stm32f4xx_hal_rcc.o"
+"dajiang3508\stm32f4xx_hal_rcc_ex.o"
+"dajiang3508\stm32f4xx_hal_flash.o"
+"dajiang3508\stm32f4xx_hal_flash_ex.o"
+"dajiang3508\stm32f4xx_hal_flash_ramfunc.o"
+"dajiang3508\stm32f4xx_hal_gpio.o"
+"dajiang3508\stm32f4xx_hal_dma_ex.o"
+"dajiang3508\stm32f4xx_hal_dma.o"
+"dajiang3508\stm32f4xx_hal_pwr.o"
+"dajiang3508\stm32f4xx_hal_pwr_ex.o"
+"dajiang3508\stm32f4xx_hal_cortex.o"
+"dajiang3508\stm32f4xx_hal.o"
+"dajiang3508\stm32f4xx_hal_exti.o"
+"dajiang3508\stm32f4xx_hal_tim.o"
+"dajiang3508\stm32f4xx_hal_tim_ex.o"
+"dajiang3508\system_stm32f4xx.o"
+--strict --scatter "Dajiang3508\Dajiang3508.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Dajiang3508.map" -o Dajiang3508\Dajiang3508.axf
